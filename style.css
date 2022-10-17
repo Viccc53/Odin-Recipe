@@ -8,7 +8,7 @@ html {
 }
 
 body {
-    max-width: 1000px;
+    width: 1000px;
     height: max-content;
     padding: 20px;
     /* border: 5px solid crimson; */
@@ -85,18 +85,24 @@ li a:hover {
 }
 
 .hnavbar {
+    display: flex;
+    flex-wrap: wrap;
+    
     list-style-type: none;
     margin: 0px;
     padding: 0px;
-    background-color: antiquewhite;
 
     border: none;
-    border-width: 200px;
+    border-width: auto;
     border-radius: 0px;
 }
 
 .hnavbar li {
-    float: left;
+    /* flex: 1; */
+    flex-shrink: 1;
+    flex-grow: 1;
+    /* flex-basis: 15%; */
+    gap: 1px;
 }
 
 .hnavbar li a {
@@ -106,6 +112,7 @@ li a:hover {
     padding: 8px 16px;
     /* margin: 2px; */
     text-decoration: none;
+    text-align: center;
     background-color: black;
 }
 
