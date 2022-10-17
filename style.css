@@ -41,10 +41,11 @@ h1 {
 }
 
 h3 {
-    border: 5px solid black;
+    /* border: 5px solid black; */
     border-radius: 10px;
     padding-left: 20px;
-    background-color: aqua;
+    color: white;
+    background-color: darkslategray;
 }
 
 p,
@@ -91,7 +92,11 @@ li a:hover {
     list-style-type: none;
     margin: 0px;
     padding: 0px;
+    justify-content: flex-end;
+    background-color: black;
+    /* flex-direction: row-reverse; */
 
+    /*  */
     border: none;
     border-width: auto;
     border-radius: 0px;
@@ -99,8 +104,8 @@ li a:hover {
 
 .hnavbar li {
     /* flex: 1; */
-    flex-shrink: 1;
-    flex-grow: 1;
+    /* flex-shrink: 1; */
+    /* flex-grow: 1; */
     /* flex-basis: 15%; */
     gap: 1px;
 }
